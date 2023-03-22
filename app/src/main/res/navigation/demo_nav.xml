@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/demo_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:name="com.demo.jetpackdemo.fragment.PaletteFragment"
+        android:id="@+id/paletteFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.demo.jetpackdemo.fragment.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_paletteFragment"
+            app:destination="@id/paletteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_coilFragment"
+            app:destination="@id/coilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coilFragment"
+        android:name="com.demo.jetpackdemo.fragment.CoilFragment"
+        android:label="CoilFragment" />
+</navigation>
