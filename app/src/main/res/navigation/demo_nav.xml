@@ -17,9 +17,16 @@
         <action
             android:id="@+id/action_homeFragment_to_coilFragment"
             app:destination="@id/coilFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_modeFragment"
+            app:destination="@id/modeFragment" />
     </fragment>
     <fragment
         android:id="@+id/coilFragment"
         android:name="com.demo.jetpackdemo.fragment.CoilFragment"
         android:label="CoilFragment" />
+    <fragment
+        android:id="@+id/modeFragment"
+        android:name="com.demo.jetpackdemo.fragment.ModeFragment"
+        android:label="ModeFragment" />
 </navigation>
